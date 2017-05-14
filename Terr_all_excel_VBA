@@ -1,0 +1,150 @@
+Sub Output()
+Dim c As Range
+Dim j As Integer
+Dim Source As Worksheet
+Dim Target As Worksheet
+
+
+Set Source = ActiveWorkbook.Worksheets("SheetAll")
+Set Target = ActiveWorkbook.Worksheets("WorkList1")
+Set Target2 = ActiveWorkbook.Worksheets("WorkList2")
+Set Target3 = ActiveWorkbook.Worksheets("WorkList3")
+Set Target4 = ActiveWorkbook.Worksheets("WorkList4")
+Set Target5 = ActiveWorkbook.Worksheets("WorkList5")
+Set Target6 = ActiveWorkbook.Worksheets("WorkList6")
+Set Target7 = ActiveWorkbook.Worksheets("WorkList7")
+
+
+j = 5     ' Start copying to row 5 in target sheet
+    For Each c In Source.Range("A5:A100000")   ' Do 1000 rows
+        If c = "1" Then
+            Target.Cells(j, "A").Value = Source.Cells(c.Row, "b").Value
+            Target.Cells(j, "b").Value = Source.Cells(c.Row, "c").Value
+            Target.Cells(j, "c").Value = Source.Cells(c.Row, "d").Value
+           Target.Cells(j, "d").Value = Source.Cells(c.Row, "e").Value
+            Target.Cells(j, "e").Value = Source.Cells(c.Row, "f").Value
+            Target.Cells(j, "f").Value = Source.Cells(c.Row, "g").Value
+            Target.Cells(j, "g").Value = Source.Cells(c.Row, "h").Value
+            Target.Cells(j, "h").Value = Source.Cells(c.Row, "i").Value
+            Target.Cells(j, "i").Value = Source.Cells(c.Row, "j").Value
+           Target.Cells(j, "j").Value = Source.Cells(c.Row, "k").Value
+           Target.Cells(j, "k").Value = Source.Cells(c.Row, "l").Value
+           Target.Cells(j, "l").Value = Source.Cells(c.Row, "m").Value
+            j = j + 1
+        End If
+    Next c
+    
+    j = 5     ' Start copying to row 5 in target sheet
+    For Each c In Source.Range("A5:A100000")   ' Do 1000 rows
+        If c = "2" Then
+            Target2.Cells(j, "A").Value = Source.Cells(c.Row, "b").Value
+            Target2.Cells(j, "b").Value = Source.Cells(c.Row, "c").Value
+            Target2.Cells(j, "c").Value = Source.Cells(c.Row, "d").Value
+            Target2.Cells(j, "d").Value = Source.Cells(c.Row, "e").Value
+            Target2.Cells(j, "e").Value = Source.Cells(c.Row, "f").Value
+            Target2.Cells(j, "f").Value = Source.Cells(c.Row, "g").Value
+            Target2.Cells(j, "g").Value = Source.Cells(c.Row, "h").Value
+            Target2.Cells(j, "h").Value = Source.Cells(c.Row, "i").Value
+            Target2.Cells(j, "i").Value = Source.Cells(c.Row, "j").Value
+            Target2.Cells(j, "j").Value = Source.Cells(c.Row, "k").Value
+            Target2.Cells(j, "k").Value = Source.Cells(c.Row, "l").Value
+            Target2.Cells(j, "l").Value = Source.Cells(c.Row, "m").Value
+            j = j + 1
+        End If
+    Next c
+    
+    j = 5     ' Start copying to row 5 in target sheet
+    For Each c In Source.Range("A5:A100000")   ' Do 1000 rows
+        If c = "3" Then
+            Target3.Cells(j, "A").Value = Source.Cells(c.Row, "b").Value
+            Target3.Cells(j, "b").Value = Source.Cells(c.Row, "c").Value
+            Target3.Cells(j, "c").Value = Source.Cells(c.Row, "d").Value
+            Target3.Cells(j, "d").Value = Source.Cells(c.Row, "e").Value
+            Target3.Cells(j, "e").Value = Source.Cells(c.Row, "f").Value
+            Target3.Cells(j, "f").Value = Source.Cells(c.Row, "g").Value
+            Target3.Cells(j, "g").Value = Source.Cells(c.Row, "h").Value
+            Target3.Cells(j, "h").Value = Source.Cells(c.Row, "i").Value
+            Target3.Cells(j, "i").Value = Source.Cells(c.Row, "j").Value
+            Target3.Cells(j, "j").Value = Source.Cells(c.Row, "k").Value
+            Target3.Cells(j, "k").Value = Source.Cells(c.Row, "l").Value
+            Target3.Cells(j, "l").Value = Source.Cells(c.Row, "m").Value
+            j = j + 1
+        End If
+    Next c
+    
+    j = 5     ' Start copying to row 5 in target sheet
+    For Each c In Source.Range("A5:A100000")   ' Do 1000 rows
+        If c = "4" Then
+            Target4.Cells(j, "A").Value = Source.Cells(c.Row, "b").Value
+            Target4.Cells(j, "b").Value = Source.Cells(c.Row, "c").Value
+            Target4.Cells(j, "c").Value = Source.Cells(c.Row, "d").Value
+            Target4.Cells(j, "d").Value = Source.Cells(c.Row, "e").Value
+            Target4.Cells(j, "e").Value = Source.Cells(c.Row, "f").Value
+            Target4.Cells(j, "f").Value = Source.Cells(c.Row, "g").Value
+            Target4.Cells(j, "g").Value = Source.Cells(c.Row, "h").Value
+            Target4.Cells(j, "h").Value = Source.Cells(c.Row, "i").Value
+            Target4.Cells(j, "i").Value = Source.Cells(c.Row, "j").Value
+            Target4.Cells(j, "j").Value = Source.Cells(c.Row, "k").Value
+            Target4.Cells(j, "k").Value = Source.Cells(c.Row, "l").Value
+            Target4.Cells(j, "l").Value = Source.Cells(c.Row, "m").Value
+            j = j + 1
+        End If
+    Next c
+    
+    j = 5     ' Start copying to row 5 in target sheet
+    For Each c In Source.Range("A5:A100000")   ' Do 1000 rows
+        If c = "5" Then
+            Target5.Cells(j, "A").Value = Source.Cells(c.Row, "b").Value
+            Target5.Cells(j, "b").Value = Source.Cells(c.Row, "c").Value
+            Target5.Cells(j, "c").Value = Source.Cells(c.Row, "d").Value
+            Target5.Cells(j, "d").Value = Source.Cells(c.Row, "e").Value
+            Target5.Cells(j, "e").Value = Source.Cells(c.Row, "f").Value
+            Target5.Cells(j, "f").Value = Source.Cells(c.Row, "g").Value
+            Target5.Cells(j, "g").Value = Source.Cells(c.Row, "h").Value
+            Target5.Cells(j, "h").Value = Source.Cells(c.Row, "i").Value
+            Target5.Cells(j, "i").Value = Source.Cells(c.Row, "j").Value
+            Target5.Cells(j, "j").Value = Source.Cells(c.Row, "k").Value
+            Target5.Cells(j, "k").Value = Source.Cells(c.Row, "l").Value
+            Target5.Cells(j, "l").Value = Source.Cells(c.Row, "m").Value
+            j = j + 1
+        End If
+    Next c
+    
+    j = 5     ' Start copying to row 5 in target sheet
+    For Each c In Source.Range("A5:A100000")   ' Do 1000 rows
+        If c = "6" Then
+            Target6.Cells(j, "A").Value = Source.Cells(c.Row, "b").Value
+            Target6.Cells(j, "b").Value = Source.Cells(c.Row, "c").Value
+            Target6.Cells(j, "c").Value = Source.Cells(c.Row, "d").Value
+            Target6.Cells(j, "d").Value = Source.Cells(c.Row, "e").Value
+            Target6.Cells(j, "e").Value = Source.Cells(c.Row, "f").Value
+            Target6.Cells(j, "f").Value = Source.Cells(c.Row, "g").Value
+            Target6.Cells(j, "g").Value = Source.Cells(c.Row, "h").Value
+            Target6.Cells(j, "h").Value = Source.Cells(c.Row, "i").Value
+            Target6.Cells(j, "i").Value = Source.Cells(c.Row, "j").Value
+            Target6.Cells(j, "j").Value = Source.Cells(c.Row, "k").Value
+            Target6.Cells(j, "k").Value = Source.Cells(c.Row, "l").Value
+            Target6.Cells(j, "l").Value = Source.Cells(c.Row, "m").Value
+            j = j + 1
+        End If
+    Next c
+    
+    j = 5     ' Start copying to row 5 in target sheet
+    For Each c In Source.Range("A5:A100000")   ' Do 1000 rows
+        If c = "7" Then
+            Target7.Cells(j, "A").Value = Source.Cells(c.Row, "b").Value
+            Target7.Cells(j, "b").Value = Source.Cells(c.Row, "c").Value
+            Target7.Cells(j, "c").Value = Source.Cells(c.Row, "d").Value
+            Target7.Cells(j, "d").Value = Source.Cells(c.Row, "e").Value
+            Target7.Cells(j, "e").Value = Source.Cells(c.Row, "f").Value
+            Target7.Cells(j, "f").Value = Source.Cells(c.Row, "g").Value
+            Target7.Cells(j, "g").Value = Source.Cells(c.Row, "h").Value
+            Target7.Cells(j, "h").Value = Source.Cells(c.Row, "i").Value
+            Target7.Cells(j, "i").Value = Source.Cells(c.Row, "j").Value
+            Target7.Cells(j, "j").Value = Source.Cells(c.Row, "k").Value
+            Target7.Cells(j, "k").Value = Source.Cells(c.Row, "l").Value
+            Target7.Cells(j, "l").Value = Source.Cells(c.Row, "m").Value
+            j = j + 1
+        End If
+    Next c
+End Sub
