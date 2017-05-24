@@ -148,3 +148,22 @@ j = 5     ' Start copying to row 5 in target sheet
         End If
     Next c
 End Sub
+
+
+
+
+Public Sub filter_print()
+    Range("A4:L4").Select   'the range that you want printed from left to right and where you want to start
+    Range(Selection, Selection.End(xlDown)).Select   'this will select everything that is visible
+    ActiveSheet.PageSetup.PrintArea = Selection.Address  ' This will set the print area to everything that is showing from the initial row from the first line
+    ActiveSheet.PrintOut  '' this will print the current print area
+ActiveSheet.PageSetup.PrintArea = ""  '' this will clear the previously selected print area
+
+''This will select the projected sheet and print that. Currently you will have to reselect the next worklist page to continue filtering
+Sheets("Weekly MACHINIST SHEET TO PRINT").Select
+Range("B8:I24").Select
+'Range(Selection, Selection.End(xlDown)).Select
+ActiveSheet.PageSetup.PrintArea = Selection.Address
+ActiveSheet.PrintOut
+
+End Sub
